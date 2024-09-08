@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Person Tracking </title>
+    </head>
+    <body>
+        <center>
+            <form action = "{{ url_for('persontracking') }}" method="post" enctype="multipart/form-data">
+
+                <h1>Video for Person Tracking with yolov10 as detection model</h1>
+                <label for = "tracker_type">Model</label>
+                <select name ="tracker_type">
+                    <option value = "botsort">
+                        Botsort
+                    </option>
+                    <option value = "bytetrack">
+                        ByteTrack
+                    </option>
+                    <option value="strongsort">
+                        StrongSort
+                    </option>
+                    <option value="deepocsort">
+                        DeepOcSort
+                    </option>
+                    <option value = "imprassoc">
+                        Imprassoc
+                    </option>
+                </select>
+                <br/>
+                <br/>
+                
+                <label for = "video_file">Upload Video</label>
+                <input type="file" name="video_file" accept="video/mp4">
+                <br/>
+                <br/>
+
+                <label for = "url">Upload Video Url</label>
+                <input type="text" name="url">
+                <br/>
+                <br/>
+
+                <input type="submit" value="submit">
+            </form>
+        </center>
+
+    </body>
+</html>
