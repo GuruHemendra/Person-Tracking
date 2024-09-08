@@ -15,3 +15,5 @@ The detected objects are passed to the trackers in boxmot to get the id's of the
 A flask app is created to allow user to upload files or youtube urls to perfrom person tracking and re identification.
 
 The model allow user to detect particular objects by choice.
+
+The notebook example.ipynb demonstrate the model using.
