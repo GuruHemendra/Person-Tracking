@@ -1,0 +1,11 @@
+ultralytics
+boxmot
+pytube
+numpy
+pandas
+torch
+torchreid
+flask
+opencv-python
+matplotlib
+-e .
